@@ -9,6 +9,9 @@
     
     margin-top: 10px;
   }
+  h2{
+    font-family:'IBM Plex Sans Medium'
+  }
   .title {
     color: grey;
   }
@@ -35,23 +38,42 @@
     margin-bottom: 16px;
     
   }
-  hr {
-    margin-bottom:70px;
-    display:block;
-    border:none;
-    color:rgb(86, 142, 146);
-    background: -webkit-gradient(radial, 50% 30%, 0, 50% 30%, 950, from(rgb(14, 8, 85)), to(#fff));
-    
+  .hr2 {
+    padding-bottom: 15px;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to left, rgba(245, 245, 245, 245), rgb(63, 145, 63), rgba(245, 245, 245, 245));
 }
-
+  #list-item-4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(48, 115, 136);
+  }
+#list-item-2{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 80px;
+    font-size: 60px;
+    text-align: left;
+    color: rgb(48, 115, 136);
+}
   #list-item-3{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 80px;
     font-size: 60px;
+    text-align: left;
+    color: rgb(48, 115, 136);
+  }
+  #list-item-1{
+    font-weight: bold;
+    color: rgb(48, 115, 136);
+    text-align: left;
+    font-size: 60px;
   }
   h4{
     text-align: center;
-    color: cadetblue;
+    color: rgb(48, 115, 136);
     font-family: Georgia, 'Times New Roman', Times, serif;
     }
 .button_login{
@@ -72,6 +94,7 @@
 
 html,body{
   overflow-x: hidden;
+  background-color: whitesmoke;
 }
 @media screen and (min-width:800px){
   .spacing {

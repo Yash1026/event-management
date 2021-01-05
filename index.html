@@ -11,18 +11,18 @@
     <img style="width: 100%; height:100%; z-index:-1 " src="des.jpg" class="img-fluid" alt="Responsive image">
     <button style="font-family:fantasy"href="https://www.google.com"class="button_login">Login</button>
     <section style="background-color:whitesmoke">
-        <h4 id="list-item-3">List of Events</h4>
-        <hr class="rounded" style="height: 6px;" >
+        <h4 id="list-item-4">List of Events</h4>
+        <hr class="hr2" style="margin: 30px;">
         <div class="row">
           <div class="column" style="padding-left:50px;">
             <div class="card">
               
               <div class="container">
-                <h2>Event 1</h2>
-                <p class="title">Treasure Hunt</p>
-                <p>Date of Event: DD/MM/YYYY</p>
-                <button class="button">Register</button>
-                <button class="button">Learn More</button> 
+                <h2>Webinar</h2>
+                <p style="text-align:left" class="title">Dept. of CE</p>
+                <p style="text-align:left "id="demo"></p>
+                <input id="reg" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                <input class="button" type=button onClick="location.href='#list-item-1'" value='More Info'>
               </div>
             </div>
           </div>
@@ -31,11 +31,11 @@
             <div class="card">
               
               <div class="container" >
-                <h2>Event 2</h2>
-                <p class="title">Musical Chair</p>
-                <p>Date of Event: DD/MM/YYYY</p>
-                <button class="button">Register</button>
-                <button class="button">Learn More</button>
+                <h2>Webinar</h2>
+                <p style="text-align:left" class="title">Dept. of CE</p>
+                <p style="text-align:left "id="dem"></p>
+                <input id="re" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                <input class="button" type=button onClick="location.href='#list-item-2'" value='More Info'>
               </div>
             </div>
           </div>
@@ -43,15 +43,107 @@
             <div class="card" >
               
               <div class="container">
-                <h2>Event 3</h2>
-                <p class="title">Peek-a-boo</p>
-                <p>Date of Event: DD/MM/YYYY</p>
-                <button class="button" >Register</button>
-                <button class="button">Learn More</button>
-                
+                <h2>Webinar</h2>
+                <p style="text-align:left" class="title">Dept. of CE</p>
+                <p style="text-align:left "id="de"></p>
+                <input id="r" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                <input class="button" type=button onClick="location.href='#list-item-3'" value='More Info'>
                 </div>
             </div>
           </div>
+         
+            
+         </section>
+         <section style="background-color: whitesmoke; margin:0px">
+          <hr class="hr2">
+          <h4 id="list-item-1">Webinar</h4><br>
+          <h3>Webinar on Data Visualization using Python</h3>
+          <h5>Details</h6>
+          <p>Instructor: Prof Mohandas Karamchand Gandhi(Ph.D., Data Scientist)</p>
+
+          <p>The Webinar is mainly organized for th pre-final and final year studetns<br> as well as teaching professionals.Webinar aims on bas basic concepts of<br> data visualization using Python. </p>
+          <p>Date: DD/MM/YYYY</p>
+          
+          <p>Skills you'll gain</p>
+          <ul>
+            <li>Basics of python</li>
+            <li>What is Data Visualization</li>
+            <li>Data Virtualization</li>
+            <li>Data Visualization(DataViz)</li>
+            <li>Matplotlib</li>
+          </ul>
+          <p>Registration Fees. : ₹ 500</p>
+          <h4 id="list-item-2">Webinar</h4><br>
+          <h3>Webinar on Data Visualization using Python</h3>
+          <h5>Details</h6>
+          <p>Instructor: Prof Mohandas Karamchand Gandhi(Ph.D., Data Scientist)</p>
+
+          <p>The Webinar is mainly organized for th pre-final and final year studetns<br> as well as teaching professionals.Webinar aims on bas basic concepts of<br> data visualization using Python. </p>
+          <p>Date: DD/MM/YYYY</p>
+          
+          <p>Skills you'll gain</p>
+          <ul>
+            <li>Basics of python</li>
+            <li>What is Data Visualization</li>
+            <li>Data Virtualization</li>
+            <li>Data Visualization(DataViz)</li>
+            <li>Matplotlib</li>
+          </ul>
+          <p>Registration Fees. : ₹ 500</p>
+          <h4 id="list-item-3">Webinar</h4><br>
+          <h3>Webinar on Data Visualization using Python</h3>
+          <h5>Details</h6>
+          <p>Instructor: Prof Mohandas Karamchand Gandhi(Ph.D., Data Scientist)</p>
+
+          <p>The Webinar is mainly organized for th pre-final and final year studetns<br> as well as teaching professionals.Webinar aims on bas basic concepts of<br> data visualization using Python. </p>
+          <p>Date: DD/MM/YYYY</p>
+          
+          <p>Skills you'll gain</p>
+          <ul>
+            <li>Basics of python</li>
+            <li>What is Data Visualization</li>
+            <li>Data Virtualization</li>
+            <li>Data Visualization(DataViz)</li>
+            <li>Matplotlib</li>
+          </ul>
+          <p>Registration Fees. : ₹ 500</p>
+          <script>
+            
+              var countDownDate1 = new Date("Jan 6, 2021 12:48:53").getTime()
+              var countDownDate2 = new Date("Jan 7, 2021 12:48:53").getTime()
+              var countDownDate3 = new Date("Jan 8, 2021 12:48:53").getTime()
+              var x = setInterval(function(){
+              var now = new Date().getTime();
+              var dates=[countDownDate1,countDownDate2,countDownDate3];
+              var times=[];
+              for(i=0;i<3;i++){
+              var distance = dates[i] - now;
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              times.push(days,hours,minutes,seconds);
+              }
+              document.getElementById("demo").innerHTML = "Registration Ends In:  " + times[0] + "d " + times[1] + "h "
+              + times[2] + "m " + times[3] + "s " ;
+              document.getElementById("dem").innerHTML = "Registration Ends In:  " + times[4] + "d " + times[5] + "h "
+              + times[6] + "m " + times[7] + "s ";
+              document.getElementById("de").innerHTML = "Registration Ends In:  " + times[8] + "d " + times[9] + "h "
+              + times[10] + "m " + times[11] + "s ";
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Registration Closed";
+                document.getElementById("dem").innerHTML = "Registration Closed";
+                document.getElementById("de").innerHTML = "Registration Closed";
+              }
+              if(distance<0){
+                document.getElementById("reg").disabled=true;
+                document.getElementById("re").disabled=true;
+                document.getElementById("r").disabled=true;
+              }
+              
+            }, 1000);
+            </script>
          </section>
 </body>
 </html>
