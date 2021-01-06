@@ -9,7 +9,7 @@
 </head>
 <body>
     <img style="width: 100%; height:100%; z-index:-1 " src="des.jpg" class="img-fluid" alt="Responsive image">
-    <div style="text-align:center">
+    <div style="text-align: center;">
     <input  class="button_login" type=button onClick="location.href='form1.html'" value='Login'>
     <input  class="button_sign_up" type=button onClick="location.href='form1.html'" value='Sign Up'>
     </div>
@@ -115,9 +115,9 @@
           <p>Registration Fees. : ₹ 500</p>
           <script>
             
-              var countDownDate1 = new Date("Jan 7, 2021 12:48:53").getTime()
-              var countDownDate2 = new Date("Jan 8, 2021 12:48:53").getTime()
-              var countDownDate3 = new Date("Jan 9, 2021 12:48:53").getTime()
+              var countDownDate1 = new Date("Jan 6, 2021 13:55:03").getTime()
+              var countDownDate2 = new Date("Jan 6, 2021 13:55:13").getTime()
+              var countDownDate3 = new Date("Jan 6, 2021 13:55:23").getTime()
               var x = setInterval(function(){
               var now = new Date().getTime();
               var dates=[countDownDate1,countDownDate2,countDownDate3];
@@ -136,18 +136,21 @@
               + times[6] + "m " + times[7] + "s ";
               document.getElementById("de").innerHTML = "Registration Ends In:  " + times[8] + "d " + times[9] + "h "
               + times[10] + "m " + times[11] + "s ";
-              if (distance < 0) {
+              if (times[0] && times[1] && times[2] && times[3] < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "Registration Closed";
-                document.getElementById("dem").innerHTML = "Registration Closed";
-                document.getElementById("de").innerHTML = "Registration Closed";
-              }
-              if(distance<0){
                 document.getElementById("reg").disabled=true;
+              }
+              if (times[4] && times[5] && times[6] && times[7] < 0) {
+                clearInterval(x);
+                document.getElementById("dem").innerHTML = "Registration Closed";
                 document.getElementById("re").disabled=true;
+              }
+              if (times[8] && times[9] && times[10] && times[11] < 0) {
+                clearInterval(x);
+                document.getElementById("de").innerHTML = "Registration Closed";
                 document.getElementById("r").disabled=true;
               }
-              
             }, 1000);
             </script>
          </section>
