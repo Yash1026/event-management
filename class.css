@@ -77,19 +77,45 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     }
 .button_login{
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 120px;
-    border-radius: 20px;
-    position:absolute;
-    top:45px;
-    right:100px; 
+  margin: 50px;
+  background-color:rgb(245,245,245);
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 8px;
+  padding:5px;
+  border:0.1em solid black;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:800;
+  font-size: 18px;
+  color:rgb(48, 115, 136);
+  text-align:center;
+  transition: all 0.2s;
+  text-align: center;
+  
+}
+.button_sign_up{
+  margin: 50px;
+  background-color: rgb(245,245,245);
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 8px;
+  padding:5px;
+  border:0.1em solid black;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Roboto', sans-serif ;
+  font-weight:800;
+  font-size: 18px;
+  color:rgb(48, 115, 136);
+  text-align:center;
+  transition: all 0.2s;
+  text-align: center;
+  
+  
 }
 
 html,body{
@@ -97,6 +123,7 @@ html,body{
   background-color: whitesmoke;
 }
 @media screen and (min-width:800px){
+ 
   .spacing {
     padding-left:120px;
   }
@@ -120,6 +147,17 @@ html {
 }
 
 @media screen and (max-width: 800px) {
+  .button_login{
+    margin: 10px;
+   
+    width: 150px;
+ 
+  }
+  .button_sign_up{
+    margin: 10px;
+    width: 150px;
+  }
+
   .column {
     padding-left:50px;
     padding-right: 50px;
