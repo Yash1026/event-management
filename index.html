@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" style="padding: 0px;">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="class.css">
+    <script src="jquery-3.5.1.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events Registeration</title>
 </head>
-<body>
+<body style="padding:0px;">
     <img style="width: 100%; height:100%; z-index:-1 " src="des.jpg" class="img-fluid" alt="Responsive image">
     <div style="text-align: center;">
     <input  class="button_login" type=button onClick="location.href='form1.html'" value='Login'>
     <input  class="button_sign_up" type=button onClick="location.href='form1.html'" value='Sign Up'>
     </div>
-    <section style="background-color:whitesmoke">
+    <section style="background-size: cover;overflow-x: hidden; z-index:-1;">
         <h4 id="list-item-4">List of Events</h4>
         <hr class="hr2" style="margin: 30px;">
+       
         <div class="row">
           <div class="column" style="padding-left:50px;">
-            <div class="card">
-              
-              <div class="container">
+            <div  style="overflow-x:hidden; padding-right:0px;" class="card">
+              <div style="overflow-x:hidden;"class="module"></div> 
+              <div  class="container">
                 <h2>Webinar</h2>
                 <p style="text-align:left" class="title">Dept. of CE</p>
                 <p style="text-align:left" class="title">Venue: D Block Seminar Hall</p>
                 <p style="text-align:left "id="demo"></p>
-                <input id="reg" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                <input id="re" class="button" type=button onClick="location.href='form1.html'" value='Register'>
                 <input class="button" type=button onClick="location.href='#list-item-1'" value='More Info'>
               </div>
             </div>
           </div>
-        
+          
           <div class="column">
             <div class="card">
               
@@ -85,7 +87,7 @@
           </ul>
         </section>
         <section class="web1">
-          <h4 id="list-item-1">Webinar<br><br><p style="font-size: 30px;">Data Visualization using Python</p></h4><br>
+          <h4 id="list-item-2">Webinar<br><br><p style="font-size: 30px;">Data Visualization using Python</p></h4><br>
           
           <section class="foto">
           <p class="speaker">Speaker</p>
@@ -109,7 +111,7 @@
           </ul>
         </section>
         <section class="web1">
-          <h4 id="list-item-1">Webinar<br><br><p style="font-size: 30px;">Data Visualization using Python</p></h4><br>
+          <h4 id="list-item-3">Webinar<br><br><p style="font-size: 30px;">Data Visualization using Python</p></h4><br>
           
           <section class="foto">
           <p class="speaker">Speaker</p>
@@ -132,9 +134,21 @@
             <li>Matplotlib</li>
           </ul>
         </section>
+        <script>
+          $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+          })
+        </script>
           <script>
             
-              var countDownDate1 = new Date("Jan 7, 2021 12:36:03").getTime()
+            
+              var countDownDate1 = new Date("Jan 10, 2021 12:36:03").getTime()
               var countDownDate2 = new Date("Jan 8, 2021 12:36:13").getTime()
               var countDownDate3 = new Date("Jan 9, 2021 12:36:23").getTime()
               var x = setInterval(function(){
@@ -172,6 +186,8 @@
               }
             }, 1000);
             </script>
+            
+          
          </section>
 </body>
 </html>
