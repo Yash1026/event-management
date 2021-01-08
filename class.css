@@ -102,7 +102,6 @@
 html,body{
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/blurry-blue.jpg);
   background-size: cover;
-
   overflow-x: hidden;
   z-index: -1;
   font-weight:500;
@@ -326,8 +325,8 @@ html {
   
 }
 .trans--grow{
-  -webkit-transition: width 1s ease-out; 
-  transition: width 15s  ease-out;
+  -webkit-transition: width 30s ease-out; 
+  transition: width 25s  ease-out;
   width : 0%;
 }
 .grow{
