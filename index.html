@@ -3,24 +3,30 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="class.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>jQuery(document).ready(function($){
+      setTimeout(function(){
+          $('.trans--grow').addClass('grow');
+      }, 275);
+  });</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href='css_classes.css'>
-   
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <title>Events Registeration</title>
+    <title>Eventop</title>
 </head>
 <body style="padding:0px;">
+ 
   
   <img style="width: 100%; height:100%; z-index:-1 " src="des.jpg" class="img-fluid" alt="Responsive image">
     <div style="text-align: center;">
-    
+      <h4>List of Events</h4>
     </div>
     <section style="background-size: cover;overflow-x: hidden; z-index:-1;">
-        <h4 id="list-item-4">List of Events</h4>
+    
+  
         <div class="container-fluid" >
           <div class="row">
             <div class="col-sm">
@@ -31,7 +37,73 @@
                   <p style="text-align:left" class="title">Dept. of CE</p>
                   <p style="text-align:left" class="title">Venue: D Block Seminar Hall</p>
                   <p style="text-align:left "id="demo"></p>
-                  <input id="reg" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                  <button id="reg" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form style="text-align:left; font-weight:400">
+        
+            
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Enrollment Number</label>
+                              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Eg. 1HK18IS072">
+                            </div>
+                           
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Department</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option selected>Select your Department</option>
+                                  <option>Computer Engineering</option>
+                                  <option>Information & Science Engineering</option>
+                                  <option>Cvil Engineering</option>
+                                  <option>Mechanical Engineering</option>
+                                  <option>Electrical Engineering</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect1">Semester</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option selected>Select your Semester</option>
+                                  <option>1st</option>
+                                  <option>2nd</option>
+                                  <option>3rd</option>
+                                  <option>4th</option>
+                                  <option>5th</option>
+                                  <option>6th</option>
+                                  <option>7th</option>
+                                  <option>8th</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Section</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Section">
+                              </div>
+                              <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">Event link will be sent to this Mail ID. Make sure you make no spelling errors</small>
+                              </div>
+                           
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Contact Number</label>
+                                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Contact Number">
+                              </div>
+                             
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <input class="button" type=button onClick="location.href='#event1'" value='More Info'>
                 </div>
               </div>
@@ -44,7 +116,9 @@
                   <p style="text-align:left" class="title">Dept. of CE</p>
                   <p style="text-align:left" class="title">Venue: D Block Seminar Hall</p>
                   <p style="text-align:left "id="dem"></p>
-                  <input id="re" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                  <button id="re" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register
+                  </button>
                   <input class="button" type=button onClick="location.href='#event2'" value='More Info'>
                 </div>
               </div>
@@ -57,7 +131,9 @@
                   <p style="text-align:left" class="title">Dept. of CE</p>
                   <p style="text-align:left" class="title">Venue: D Block Seminar Hall</p>
                   <p style="text-align:left "id="de"></p>
-                  <input id="r" class="button" type=button onClick="location.href='form1.html'" value='Register'>
+                  <button id="r" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Register
+                  </button>
                   <input class="button" type=button onClick="location.href='#event3'" value='More Info'>
                 </div>
               </div>
@@ -65,14 +141,16 @@
           </div>
         </div>
     </section>
-
-          <section class="web1">
+    <hr id="event1"class="trans--grow hr1">
+  <p id="hi">Webinar1</p>
+<hr class="trans--grow hr2">
+    <section class="web1">
             <div class="container-fluid">
               <div class="row no-gutters">
-                <div class="col-sm"> <h6 id="event1">Webinar<br><br><p class="heading">Data Visualization using Python</p></h6><br></div>
+                <div class="col-sm"><p style="color:rgb(31, 16, 16)"class="heading">Data Visualization using Python</p><br></div>
                 <div class="col-sm" style="text-align:center;">
                   <div class="col"><p  class="speaker" >Speaker</p></div>
-                  <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg" alt="John"></div>
+                  <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg"></div>
                   <div class="col"><p class="speaker" >M.K.Gandhi<br>(Ph. D, Data Scientist)</p></div></div>    
               </div>
             </div>
@@ -88,51 +166,57 @@
               <li>Matplotlib</li>
             </ul>
           </section>
-          <section class="web1">
-            <div class="container-fluid">
-              <div class="row no-gutters">
-                <div class="col-sm"> <h6 id="event2">Webinar<br><br><p class="heading">Data Visualization using Python</p></h6><br></div>
-                <div class="col-sm" style="text-align:center;">
-                  <div class="col"><p  class="speaker" >Speaker</p></div>
-                  <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg" alt="John"></div>
-                  <div class="col"><p class="speaker" >M.K.Gandhi<br>(Ph. D, Data Scientist)</p></div></div>    
-              </div>
-            </div>
-            <p class="dateandfee" >Date: DD/MM/YYYY <br><br>Registration Fees. : ₹ 500<br><br></p>
-            <div><p class="aim">Aim</p><br><br></div>
-            <div><p class="text">The Webinar is mainly organized for th pre-final and final year studetns as well as teaching professionals. Webinar aims on basic concepts of data visualization using Python. </p><br><br></div>
-            <p class="aim">Skills you'll gain</p>
-            <ul class="text" style="padding-left:40px;">
-              <li>Basics of python</li>
-              <li>What is Data Visualization</li>
-              <li>Data Virtualization</li>
-              <li>Data Visualization(DataViz)</li>
-              <li>Matplotlib</li>
-            </ul>
-          </section>
-          <section class="web1">
-            <div class="container-fluid">
-              <div class="row no-gutters">
-                <div class="col-sm"> <h6 id="event3">Webinar<br><br><p class="heading">Data Visualization using Python</p></h6><br></div>
-                <div class="col-sm" style="text-align:center;">
-                  <div class="col"><p  class="speaker" >Speaker</p></div>
-                  <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg" alt="John"></div>
-                  <div class="col"><p class="speaker" >M.K.Gandhi<br>(Ph. D, Data Scientist)</p></div></div>    
-              </div>
-            </div>
-            <p class="dateandfee" >Date: DD/MM/YYYY <br><br>Registration Fees. : ₹ 500<br><br></p>
-            <div><p class="aim">Aim</p><br><br></div>
-            <div><p class="text">The Webinar is mainly organized for th pre-final and final year studetns as well as teaching professionals. Webinar aims on basic concepts of data visualization using Python. </p><br><br></div>
-            <p class="aim">Skills you'll gain</p>
-            <ul class="text" style="padding-left:40px;">
-              <li>Basics of python</li>
-              <li>What is Data Visualization</li>
-              <li>Data Virtualization</li>
-              <li>Data Visualization(DataViz)</li>
-              <li>Matplotlib</li>
-            </ul>
-          </section>
-        
+          <hr id="event2"class="trans--grow hr1">
+          <p id="hi">Webinar2</p>
+        <hr class="trans--grow hr2">
+            <section class="web1">
+                    <div class="container-fluid">
+                      <div class="row no-gutters">
+                        <div class="col-sm"><p class="heading">Data Visualization using Python</p><br></div>
+                        <div class="col-sm" style="text-align:center;">
+                          <div class="col"><p  class="speaker" >Speaker</p></div>
+                          <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg"></div>
+                          <div class="col"><p class="speaker" >M.K.Gandhi<br>(Ph. D, Data Scientist)</p></div></div>    
+                      </div>
+                    </div>
+                    <p class="dateandfee" >Date: DD/MM/YYYY <br><br>Registration Fees. : ₹ 500<br><br></p>
+                    <div><p class="aim">Aim</p><br><br></div>
+                    <div><p class="text">The Webinar is mainly organized for th pre-final and final year studetns as well as teaching professionals. Webinar aims on basic concepts of data visualization using Python. </p><br><br></div>
+                    <p class="aim">Skills you'll gain</p>
+                    <ul class="text" style="padding-left:40px;">
+                      <li>Basics of python</li>
+                      <li>What is Data Visualization</li>
+                      <li>Data Virtualization</li>
+                      <li>Data Visualization(DataViz)</li>
+                      <li>Matplotlib</li>
+                    </ul>
+                  </section>
+                  <hr id="event3"class="trans--grow hr1">
+                  <p id="hi">Webinar3</p>
+                <hr class="trans--grow hr2">
+                    <section class="web1">
+                            <div class="container-fluid">
+                              <div class="row no-gutters">
+                                <div class="col-sm"><p class="heading">Data Visualization using Python</p><br></div>
+                                <div class="col-sm" style="text-align:center;">
+                                  <div class="col"><p  class="speaker" >Speaker</p></div>
+                                  <div class="col"> <img  style="height:240px; border-radius:50%; width:240px; "src="mg.jpg"></div>
+                                  <div class="col"><p class="speaker" >M.K.Gandhi<br>(Ph. D, Data Scientist)</p></div></div>    
+                              </div>
+                            </div>
+                            <p class="dateandfee" >Date: DD/MM/YYYY <br><br>Registration Fees. : ₹ 500<br><br></p>
+                            <div><p class="aim">Aim</p><br><br></div>
+                            <div><p class="text">The Webinar is mainly organized for th pre-final and final year studetns as well as teaching professionals. Webinar aims on basic concepts of data visualization using Python. </p><br><br></div>
+                            <p class="aim">Skills you'll gain</p>
+                            <ul class="text" style="padding-left:40px;">
+                              <li>Basics of python</li>
+                              <li>What is Data Visualization</li>
+                              <li>Data Virtualization</li>
+                              <li>Data Visualization(DataViz)</li>
+                              <li>Matplotlib</li>
+                            </ul>
+                          </section>
+         
         <div class="mt-5 pt-5 pb-5 footer">
           <div >
             <div class="row">
@@ -168,9 +252,10 @@
           </div>
           </div>
           <script>
-              var countDownDate1 = new Date("Jan 10, 2021 18:16:00").getTime()
-              var countDownDate2 = new Date("Jan 8, 2021 12:36:13").getTime()
-              var countDownDate3 = new Date("Jan 9, 2021 12:36:23").getTime()
+           
+              var countDownDate1 = new Date("Jan 13, 2021 17:11:00").getTime()
+              var countDownDate2 = new Date("Jan 10, 2021 17:11:13").getTime()
+              var countDownDate3 = new Date("Jan 11, 2021 17:11:23").getTime()
               var x = setInterval(function(){
               var now = new Date().getTime();
               var dates=[countDownDate1,countDownDate2,countDownDate3];
@@ -209,5 +294,13 @@
             
           
          </section>
+         <script>
+          function myFunction() {
+            alert("I am an alert box!");
+          }
+          </script>
+      
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -32,7 +32,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .button {
-    margin: 8px;
+    font-size: 16px;
+     margin: 8px;
     border: none;
     outline: 0;
     display: inline-block;
@@ -43,6 +44,7 @@
     cursor: pointer;
     width: 120px;
     border-radius: 20px;
+   
   }
   
   .button:hover {
@@ -54,12 +56,7 @@
     margin-bottom: 16px;
     
   }
-  .hr2 {
-    padding-bottom: 15px;
-    border: 0;
-    height: 3px;
-    background-image: linear-gradient(to left, rgba(245, 245, 245, 245), rgb(63, 145, 63), rgba(245, 245, 245, 245));
-}
+  
   #list-item-4{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 80px;
@@ -93,7 +90,9 @@
     
   }
   h4{
-   
+    margin-bottom:40px;
+    margin-top:40px;
+    font-size:90px;
     text-align: center;
     color: rgb(48, 115, 136);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -128,7 +127,9 @@ html {
   padding: 0 8px;
 }
 .heading{
-  font-size: 40px;
+  padding-left:35px;
+  font-size: 45px;
+  color:rgb(31, 16, 16)
 }
 .speaker{
   font-size:35px;
@@ -148,6 +149,9 @@ html {
 }
 
 @media screen and (max-width: 760px) {
+  h4{
+    font-size:55px;
+  }
   .speaker{
     font-size:30px;
   }
@@ -170,10 +174,7 @@ html {
   .end{
     visibility: visible;
   }
-  h4{
-    margin-bottom:20px;
-    padding-left: 20px;
-  }
+  
   #event1{
 
     font-size:50px;
@@ -220,6 +221,7 @@ html {
   font-family: arial;
 }
 .web1{
+
   margin-top:150px;
 }
 .footer{
@@ -264,5 +266,83 @@ html {
   color: white;
   border-radius: 50px;
   text-decoration: none;
+}
+#reg {
+  margin: 8px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 20px;
+}
+#reg:hover {
+  background-color: #555;
+}
+#re {
+  margin: 8px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 20px;
+}
+#re:hover {
+  background-color: #555;
+}
+#r {
+  margin: 8px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 20px;
+}
+#r:hover {
+  background-color: #555;
+}
+#hi{
+  font-family: 'xanh mono';
+  color: #09264b;
+  margin:0px;
+  text-align: center;
+  font-size:55px;
+  font-weight:bolder;
+  
+}
+.trans--grow{
+  -webkit-transition: width 1s ease-out; 
+  transition: width 15s  ease-out;
+  width : 0%;
+}
+.grow{
+  width:100%;
+}
+.hr1{
+  margin-left:0;
+}
+.hr2{
+  margin-right:0;
+}
+hr{
+  margin-top: 20px;
+  padding: 2px 0;
+  border: none;
+  background-color: #000000;
+  letter-spacing: 5px;
 }
 
