@@ -102,7 +102,7 @@
 html,body{
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/blurry-blue.jpg);
   background-size: cover;
-  padding: 30px;
+
   overflow-x: hidden;
   z-index: -1;
   font-weight:500;
